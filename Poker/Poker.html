@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing Cards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Poker.css">
+</head>
+
+<body>
+  <header class="title">
+    <h1>Royal Hand</h1>
+    <p>♠ ♥ ♣ ♦</p>
+  </header>
+
+  <main id="playing-cards">
+    <!-- 卡片1 黑桃A -->
+    <div class="card">
+      <div class="corner top">A<span>♠</span></div>
+      <div class="middle ace"><span class="p-c">♠</span></div>
+      <div class="corner bottom">A<span>♠</span></div>
+    </div>
+
+    <!-- 卡片2 梅花2 -->
+    <div class="card">
+      <div class="corner top">2<span>♣</span></div>
+      <div class="middle">
+        <span class="p-tc">♣</span>
+        <span class="p-bc flip">♣</span>
+      </div>
+      <div class="corner bottom">2<span>♣</span></div>
+    </div>
+
+    <!-- 卡片3 红桃3 -->
+    <div class="card red">
+      <div class="corner top">3<span>♥</span></div>
+      <div class="middle">
+        <span class="p-tc">♥</span>
+        <span class="p-c">♥</span>
+        <span class="p-bc flip">♥</span>
+      </div>
+      <div class="corner bottom">3<span>♥</span></div>
+    </div>
+
+    <!-- 卡片4 方块4 -->
+    <div class="card red">
+      <div class="corner top">4<span>♦</span></div>
+      <div class="middle">
+        <span class="p-tl">♦</span>
+        <span class="p-tr">♦</span>
+        <span class="p-bl flip">♦</span>
+        <span class="p-br flip">♦</span>
+      </div>
+      <div class="corner bottom">4<span>♦</span></div>
+    </div>
+
+    <!-- 卡片5 黑桃5 -->
+    <div class="card">
+      <div class="corner top">5<span>♠</span></div>
+      <div class="middle">
+        <span class="p-tl">♠</span>
+        <span class="p-tr">♠</span>
+        <span class="p-c">♠</span>
+        <span class="p-bl flip">♠</span>
+        <span class="p-br flip">♠</span>
+      </div>
+      <div class="corner bottom">5<span>♠</span></div>
+    </div>
+  </main>
+</body>
+
+</html>

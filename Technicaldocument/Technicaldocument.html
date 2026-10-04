@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS 技术文档</title>
+  <link rel="stylesheet" href="Technicaldocument.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>JavaScript 文档</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+    <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+    <a class="nav-link" href="#Hello_world">Hello world</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#Data_types">Data types</a>
+    <a class="nav-link" href="#Operators">Operators</a>
+    <a class="nav-link" href="#if...else_statement">if...else statement</a>
+    <a class="nav-link" href="#Loops">Loops</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Arrays">Arrays</a>
+    <a class="nav-link" href="#Objects">Objects</a>
+    <a class="nav-link" href="#DOM_manipulation">DOM manipulation</a>
+    <a class="nav-link" href="#Reference">Reference</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript 是一门跨平台、面向对象的脚本语言。</p>
+      <p>JavaScript 是轻量级的，可嵌入网页中。</p>
+      <code>console.log("hi")</code>
+      <ul>
+        <li>网页交互</li>
+        <li>服务端开发</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="What_you_should_already_know">
+      <header>What you should already know</header>
+      <p>本指南假设你有以下基础知识。</p>
+      <p>了解 HTML 和 CSS 基础。</p>
+      <code>let a = 1;</code>
+      <ul>
+        <li>基本网页结构</li>
+        <li>基础编程逻辑</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="JavaScript_and_Java">
+      <header>JavaScript and Java</header>
+      <p>JavaScript 和 Java 在很多方面不同。</p>
+      <p>JS 是弱类型脚本语言。</p>
+      <code>const name = "js";</code>
+      <ul>
+        <li>不需要编译</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Hello_world">
+      <header>Hello world</header>
+      <p>下面是最简单的JS代码。</p>
+      <p>运行代码在控制台输出文字。</p>
+      <code>alert('Hello World')</code>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>变量用来存储数据。</p>
+      <p>可以使用 let、const、var 声明变量。</p>
+      <p>变量名称区分大小写。</p>
+      <code>var x = 100;</code>
+      <ul>
+        <li>let 块级作用域</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Data_types">
+      <header>Data types</header>
+      <p>JavaScript 有七种基本数据类型和一种引用类型 Object。</p>
+      <p>可以使用 typeof 运算符查看值的类型。</p>
+      <code>typeof 42;        // "number"
+typeof "hello";   // "string"
+typeof true;      // "boolean"
+typeof undefined; // "undefined"</code>
+      <ul>
+        <li>Number、String、Boolean</li>
+        <li>Undefined、Null</li>
+        <li>Symbol、BigInt</li>
+        <li>Object（引用类型）</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Operators">
+      <header>Operators</header>
+      <p>运算符用于对值进行计算、比较和逻辑判断。</p>
+      <p>推荐使用严格相等 === 而不是 ==，避免隐式类型转换。</p>
+      <code>let sum = 5 + 3;       // 8
+5 === "5";             // false
+5 == "5";              // true
+true &amp;&amp; false;         // false</code>
+      <ul>
+        <li>算术运算符：+ - * / %</li>
+        <li>比较运算符：=== !== &gt; &lt;</li>
+        <li>逻辑运算符：&amp;&amp; || !</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="if...else_statement">
+      <header>if...else statement</header>
+      <p>if 语句在条件为真时执行一段代码。</p>
+      <p>可以用 else if 和 else 处理多个分支。</p>
+      <code>let score = 85;
+if (score &gt;= 90) {
+  console.log("优秀");
+} else if (score &gt;= 60) {
+  console.log("及格");
+} else {
+  console.log("不及格");
+}</code>
+      <ul>
+        <li>条件会被转换为布尔值</li>
+        <li>0、""、null、undefined、NaN 都视为 false</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>循环用于重复执行相同的代码。</p>
+      <p>常见的有 for、while 和 for...of 循环。</p>
+      <code>for (let i = 0; i &lt; 3; i++) {
+  console.log(i);
+}
+
+let n = 0;
+while (n &lt; 3) {
+  n++;
+}</code>
+      <ul>
+        <li>break 可以提前结束循环</li>
+        <li>continue 跳过本次循环</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>函数是一段可以重复调用的代码块。</p>
+      <p>函数可以接收参数，并通过 return 返回结果。</p>
+      <p>ES6 引入了更简洁的箭头函数写法。</p>
+      <code>function add(a, b) {
+  return a + b;
+}
+
+const multiply = (a, b) =&gt; a * b;
+
+add(2, 3);       // 5
+multiply(2, 3);  // 6</code>
+      <ul>
+        <li>函数声明会被提升</li>
+        <li>箭头函数没有自己的 this</li>
+        <li>参数可以设置默认值</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Arrays">
+      <header>Arrays</header>
+      <p>数组用于按顺序存储多个值，索引从 0 开始。</p>
+      <p>数组提供了很多实用的内置方法。</p>
+      <code>const fruits = ["apple", "banana"];
+fruits.push("orange");
+fruits.length;                 // 3
+fruits.map(f =&gt; f.toUpperCase());
+fruits.filter(f =&gt; f.length &gt; 5);</code>
+      <ul>
+        <li>push / pop：在末尾添加 / 删除</li>
+        <li>map：映射生成新数组</li>
+        <li>filter：筛选元素</li>
+        <li>forEach：遍历每个元素</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Objects">
+      <header>Objects</header>
+      <p>对象是键值对的集合，用来描述复杂的数据。</p>
+      <p>可以通过点语法或方括号访问属性。</p>
+      <code>const user = {
+  name: "Yuze",
+  age: 20,
+  greet() {
+    return "Hi, " + this.name;
+  }
+};
+
+user.name;       // "Yuze"
+user["age"];     // 20
+user.greet();    // "Hi, Yuze"</code>
+      <ul>
+        <li>Object.keys() 获取所有键</li>
+        <li>解构赋值：const { name } = user;</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="DOM_manipulation">
+      <header>DOM manipulation</header>
+      <p>DOM 是浏览器把 HTML 解析成的对象树。</p>
+      <p>JavaScript 可以通过 DOM 读取和修改页面内容。</p>
+      <code>const btn = document.querySelector("#btn");
+btn.addEventListener("click", () =&gt; {
+  document.body.style.background = "lightblue";
+});</code>
+      <ul>
+        <li>querySelector 选择元素</li>
+        <li>textContent / innerHTML 修改内容</li>
+        <li>addEventListener 绑定事件</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <p>本文档部分内容参考自 MDN Web Docs。</p>
+      <p>想深入学习可以阅读以下资料。</p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide" target="_blank">MDN JavaScript 指南</a></li>
+        <li><a href="https://javascript.info/" target="_blank">The Modern JavaScript Tutorial</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
