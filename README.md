@@ -9,7 +9,7 @@
 ### 📁 Project 2: City Skyline Page
 🔗 [Live Preview](https://cyuze666-ui.github.io/first/CitySkyline/cityskyline.html)
 💻 [Source Code](https://github.com/cyuze666-ui/first)
-
+The time will change depending on the screen size, you can try shrinking the browser.
 
 ### 📁 Project 3: Poker
 🔗 [Live Preview](https://cyuze666-ui.github.io/first/Poker/Poker.html)
