@@ -10,3 +10,18 @@
 🔗 [Live Preview](https://cyuze666-ui.github.io/first/CitySkyline/cityskyline.html)
 💻 [Source Code](https://github.com/cyuze666-ui/first)
 The time can change based on the screen size
+
+### 📁 Project 3: Poker
+🔗 [Live Preview](https://cyuze666-ui.github.io/first/Poker/Poker.html)
+💻 [Source Code](https://github.com/cyuze666-ui/first)
+The time can change based on the screen size
+
+### 📁 Project 4: Quizpractice
+🔗 [Live Preview](https://cyuze666-ui.github.io/first/Quizpractice/Quizpractice.html)
+💻 [Source Code](https://github.com/cyuze666-ui/first)
+The time can change based on the screen size
+
+### 📁 Project 5: Technicaldocument
+🔗 [Live Preview](https://cyuze666-ui.github.io/first/Technicaldocument/Technicaldocument.html)
+💻 [Source Code](https://github.com/cyuze666-ui/first)
+The time can change based on the screen size
